@@ -136,7 +136,7 @@ function formsub() { //On form submit, this function will execute
     var btn = document.getElementById('frmbtn');
     frm.remove();
     btn.remove();
-    document.body.innerHTML = '<div class="subdiv"><div class="subinnerdiv"><p style="font-size: 30px;">Thank you!</p><span style="margin-left: 16px;">Survey Submitted.</span></div></div>';
+    document.body.innerHTML = '<div class="subdiv"><div class="subinnerdiv"><p style="font-size: 30px;text-align: center;">Thank you!</p><p style="text-align: center;">Survey Submitted.</p></div></div>';
 }
 
 function checkbox_check(id) { //To check if atleast one checkbox is checked
