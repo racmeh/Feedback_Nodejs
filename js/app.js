@@ -43,7 +43,7 @@ function onWindowLoadFunction() {
                     else if (resp[i].type == "rating") { //Rating
 
                         if (resp[i].mandatory == true) {
-                        	formstr = '<label for="' + resp[i].id + '">' + resp[i].title + '*</label><br><br>';
+                        	formstr = '<span style="color:#9e9e9e;">'+(i+1)+') </span><label for="' + resp[i].id + '">' + resp[i].title + '*</label><br><br>';
                             formstr += '<div class="ratingbar"><input type="radio" id="rating1" name="rating" value="1" checked required><label for="rating1">1</label>' +
                                 '<input type="radio" id="rating2" name="rating" value="2" required><label for="rating2">2</label>' +
                                 '<input type="radio" id="rating3" name="rating" value="3" required><label for="rating3">3</label>' +
@@ -56,7 +56,7 @@ function onWindowLoadFunction() {
                                 '<input type="radio" id="rating10" name="rating" value="10" required><label for="rating10">10</label><br><br>';
                         }
                         else {
-							formstr = '<label for="' + resp[i].id + '">' + resp[i].title + '</label><br><br>';
+							formstr = '<span style="color:#9e9e9e;">'+(i+1)+') </span><label for="' + resp[i].id + '">' + resp[i].title + '</label><br><br>';
                             formstr += '<div class="ratingbar"><input type="radio" id="rating1" name="rating" value="1"><label for="rating1">1</label>' +
                                 '<input type="radio" id="rating2" name="rating" value="2"><label for="rating2">2</label>' +
                                 '<input type="radio" id="rating3" name="rating" value="3"><label for="rating3">3</label>' +
