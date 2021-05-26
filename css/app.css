@@ -10,7 +10,7 @@ input{
 }
 
 input[type="radio"],input[type="checkbox"]{
-width: 1vw;	
+width: auto;	
 }
 
 @media only screen and (max-width: 768px) {
@@ -20,7 +20,7 @@ width: 1vw;
   }
 
 input[type="radio"],input[type="checkbox"]{
-width: 1vw;	
+width: auto;	
 }
 	
   .subinnerdiv{
