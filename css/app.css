@@ -12,8 +12,9 @@ input:not(input[type="radio"]):not(input[type="checkbox"]){
 @media only screen and (max-width: 768px) {
   /*Responsiveness for mobile devices*/
   input:not(input[type="radio"]):not(input[type="checkbox"]){
-	width: 80vw;
+	border: none;
 	border-bottom: 2px solid #1e90ff;
+	width: 80vw;
   }
   .subinnerdiv{
   	width:65%;
