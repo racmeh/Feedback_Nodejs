@@ -9,6 +9,7 @@ var http = require('http');
 var url = require('url');
 var path = require('path');
 var util = require('util');
+var port = process.env.PORT || 8080;
 var questions = [
   { id: 1, title: 'Your name', type: 'text', mandatory: true, has_options: false },
   { id: 2, title: 'Your email', type: 'email', mandatory: true, has_options: false },
@@ -67,6 +68,6 @@ http.createServer(function (req, res) {
   res.writeHead(404, {'Content-Type': 'text/plain'});
   res.write('404 Not Found\n');
   res.end();
-}).listen(8000, 'localhost');
+}).listen(port);
 
-console.log('server running on port 8000');
+console.log('server running on port 8080');
