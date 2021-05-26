@@ -9,7 +9,7 @@ var http = require('http');
 var url = require('url');
 var path = require('path');
 var util = require('util');
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 3000;
 var questions = [
   { id: 1, title: 'Your name', type: 'text', mandatory: true, has_options: false },
   { id: 2, title: 'Your email', type: 'email', mandatory: true, has_options: false },
@@ -70,4 +70,4 @@ http.createServer(function (req, res) {
   res.end();
 }).listen(port);
 
-console.log('server running on port 8080');
+console.log('server running on port 3000');
